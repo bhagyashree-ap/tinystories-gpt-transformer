@@ -1,0 +1,18 @@
+{
+  "prompts": [
+    "Once upon a time, a little fox",
+    "Mia found a strange box in the garden.",
+    "Ben wanted to help his friend, but"
+  ],
+  "sampling": {
+    "max_new_tokens": 80,
+    "temperature": 0.8,
+    "top_k": 50,
+    "seeds": [
+      100,
+      101,
+      102
+    ],
+    "stop_on_eos": true
+  }
+}
