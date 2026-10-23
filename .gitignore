@@ -1,0 +1,50 @@
+# Model checkpoints and weights (large, regenerable)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Data and token arrays (rebuilt by the notebook)
+*.npy
+*.npz
+*.jsonl
+data/
+
+# Raw run directory (small result files are copied to results/)
+q3_tinygpt_runs/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Hugging Face / dataset caches
+.cache/
+huggingface/
+
+# Logs and experiment trackers
+*.log
+wandb/
+runs/
+lightning_logs/
+
+# Secrets
+.env
+*.token
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
