@@ -1,0 +1,51 @@
+{
+  "model": {
+    "vocab_size": 8192,
+    "max_context": 256,
+    "n_layer": 6,
+    "n_head": 6,
+    "d_model": 384,
+    "dropout": 0.1
+  },
+  "training": {
+    "context": 256,
+    "microbatch": 8,
+    "tokens_per_update": 16384,
+    "token_budget": 25000000,
+    "lr": 0.0003,
+    "weight_decay": 0.1,
+    "eval_every": 100,
+    "seed": 2026
+  },
+  "versions": {
+    "torch": "2.8.0",
+    "numpy": "2.0.2",
+    "tokenizers": "0.22.2",
+    "datasets": "4.5.0",
+    "matplotlib": "3.9.4"
+  },
+  "tokenizer_sha256": "a635d19f48fe5d7aa9d7f34ab9ad37213bf58a65bb48c1929617856df15293bb",
+  "data_sha256": {
+    "train": "d2286f3a06282ba6d408f692371266495868a93120ac2a596435ebff7f8fae2b",
+    "validation": "6b8bff0b5c1860250cd0e51352c3392c5cd8517778594dfd971ea13e6aedb92d"
+  },
+  "profile": "full",
+  "data_source": "tinystories",
+  "validation_target_tokens": 32768,
+  "prompts": [
+    "Once upon a time, a little fox",
+    "Mia found a strange box in the garden.",
+    "Ben wanted to help his friend, but"
+  ],
+  "sampling": {
+    "max_new_tokens": 80,
+    "temperature": 0.8,
+    "top_k": 50,
+    "seeds": [
+      100,
+      101,
+      102
+    ],
+    "stop_on_eos": true
+  }
+}

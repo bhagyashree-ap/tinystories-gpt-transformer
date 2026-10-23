@@ -1,0 +1,21 @@
+{
+  "run_directory": "tinygpt_runs/full_tinystories/context_256",
+  "parameters": 13891584,
+  "processed_tokens": 25001984,
+  "best_val_loss": 2.22077414393425,
+  "best_val_perplexity": 9.214461424906101,
+  "best_step": 1526,
+  "best_tokens": 25001984,
+  "microbatch": 8,
+  "accumulation_steps": 8,
+  "effective_batch_sequences": 64,
+  "warmup_updates": 100,
+  "validation_target_tokens": 32768,
+  "gpu_name": "NVIDIA A100-SXM4-40GB",
+  "training_seconds": 234.79152259900104,
+  "wall_seconds_excluding_initial_evaluation": 252.19855589000002,
+  "training_tokens_per_second": 106485.88894199868,
+  "peak_allocated_GiB": 0.8253669738769531,
+  "peak_reserved_GiB": 0.873046875,
+  "amp_skipped_updates": 0
+}
